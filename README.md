@@ -20,5 +20,5 @@ This is a web project built with **Next.js**, **Tailwind CSS**, and various mode
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-repo-name.git
+   git clone https://github.com/ApirakGGG/Portfolio
    cd your-repo-name
