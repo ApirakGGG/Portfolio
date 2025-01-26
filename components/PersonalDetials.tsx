@@ -120,7 +120,7 @@ export default function PersonalDetials() {
                     e.preventDefault(); // กันการรีเฟรช
                     dowloadPdf(); //
                   }}
-                  className="flex gap-1.5 border px-5 py-1.5 rounded-xl bg-transparent"
+                  className="flex gap-1.5 border px-5 py-1.5 w-[300px] rounded-xl bg-transparent"
                 >
                   Download Resume PDF <CloudDownload />
                 </a>
