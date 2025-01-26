@@ -1,5 +1,5 @@
 "use client";
-import { Mail, Phone, Github, ChevronDown } from "lucide-react";
+import { Mail, Phone, Github, ChevronDown, CloudDownload } from "lucide-react";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -47,6 +47,14 @@ export default function PersonalDetials() {
     setAge(calculateAge("2004-03-25"));
   }, []);
 
+  const dowloadPdf = () => {
+    const link = document.createElement("a"); //กำหนดให้ element a
+    link.href = "/pdffile/React_Interview_Questions.pdf"; //ชื่อfile
+    link.download = "ResumePDF"; // กำหนดชื่อไฟล์ตอนดาวน์โหลด
+    document.body.appendChild(link); // เพิ่มfile
+    link.click(); // เริ่มดาวน์โหลดไฟล์
+    document.body.removeChild(link); // ลบ element ออกจาก DOM หลังจากการใช้งาน
+  };
   return (
     <div className="my-32">
       <div className="my-10 flex justify-center rotate-6">
@@ -106,11 +114,16 @@ export default function PersonalDetials() {
               </div>
             )}
             <div className="mt-7">
-              <Link
-                href={"/dowloadPDF"}
-                className="border px-5 py-1 rounded-xl bg-gradient-to-r from-sky-400 to-pink-500"
-              >
-                Download Resume
+              <Link href={"#"} legacyBehavior className="hidden">
+                <a
+                  onClick={(e) => {
+                    e.preventDefault(); // กันการรีเฟรช
+                    dowloadPdf(); //
+                  }}
+                  className="flex gap-1.5 border px-5 py-1.5 rounded-xl bg-transparent"
+                >
+                  Download Resume PDF <CloudDownload />
+                </a>
               </Link>
             </div>
           </div>
