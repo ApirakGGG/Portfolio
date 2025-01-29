@@ -52,7 +52,7 @@ export default function Slide() {
     ],
   };
   return (
-    <div className="max-w-7xl p-4 mx-auto ">
+    <div className="px-5 p-4 mx-auto">
       <Slider {...settings}>
         {projects.map((item) => (
           <div key={item.id} className="p-4">
