@@ -1,6 +1,6 @@
 import { Mail, Phone, Github,} from "lucide-react";
 import Detail from "./Detail";
-import Skills from "./skills";
+import Skills from "./Skills";
 
 export default function PersonalDetials() {
   const contact = [
