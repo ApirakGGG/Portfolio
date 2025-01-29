@@ -29,9 +29,9 @@ export default function PersonalDetials() {
         </h1>
       </div>
       {/* detail & skills */}
-      <div className="px-5 py-5 mt-5 flex flex-col gap-3">
+      <div className="px-5 py-5 mt-10 flex flex-col gap-3">
         <div className="h-[50vh] w-full px-5 py-5">
-          <div className="flex justify-center my-5 ">
+          <div className="flex justify-center my-5">
             <h2 className="text-white text-xl ">Personal Details</h2>
           </div>
           <div>
@@ -43,7 +43,7 @@ export default function PersonalDetials() {
         <Skills />
       </div>
       {/* section Contact*/}
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-14">
         <div className="h-[30vh] w-[60vh] px-5 ">
           <div className="flex justify-center my-7">
             <h2 className="text-white text-xl">Contact</h2>
