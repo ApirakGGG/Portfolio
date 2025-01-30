@@ -52,7 +52,10 @@ export default function Slide() {
     ],
   };
   return (
-    <div className="px-5 p-4 mx-auto">
+    <div>
+       <h3 className="text-5xl bg-gradient-to-t from-orange-500 to-purple-700 text-transparent bg-clip-text rotate-6">
+        PROJECTS
+      </h3>
       <Slider {...settings}>
         {projects.map((item) => (
           <div key={item.id} className="p-4">

@@ -1,6 +1,7 @@
 import Contact from "./Contact";
 import Detail from "./Detail";
 import Skills from "./Skills";
+import Slide from "./Slide";
 
 export default function PersonalDetials() {
   return (
@@ -10,14 +11,15 @@ export default function PersonalDetials() {
           ABOUT <span className="text-sky-300 underline">ME</span>
         </h1>
       </div>
-      {/* detail & skills */}
-      <div className="px-5 py-5 flex flex-col gap-3">
+      <div className="px-5 py-5 gap-3 space-y-36">
         {/* Detail */}
         <Detail />
         {/* Skills */}
         <Skills />
         {/* Contact*/}
         <Contact />
+        {/* Slide */}
+        <Slide />
       </div>
     </div>
   );

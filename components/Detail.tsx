@@ -33,7 +33,7 @@ const Detail = () => {
     document.body.removeChild(link); // ลบ element ออกจาก DOM หลังจากการใช้งาน
   };
   return (
-    <div className="mt-20 border rounded-lg h-[60vh]">
+    <div className="h-[60vh]">
        <div className="flex justify-center mt-5">
           <h2 className="text-white text-xl ">Personal Details</h2>
         </div>

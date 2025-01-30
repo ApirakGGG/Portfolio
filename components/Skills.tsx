@@ -29,7 +29,7 @@ export default function Skills() {
     { id: 2, name: "github", img: "/service/github-logo-vector.png" },
   ];
   return (
-    <div className="mt-20 border rounded-lg h-[60vh]">
+    <div className="h-[60vh]">
       <div className="flex justify-center mt-5">
         <h2 className="text-white text-xl">Skills</h2>
       </div>

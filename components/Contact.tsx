@@ -19,8 +19,8 @@ const Contact = () => {
         },
         { id: 3, name: "Phone:", text: "+66932341644", icon: Phone },
       ];
-  return (<div className="flex justify-center mt-20">
-    <div className="h-[30vh] w-[60vh] px-5 border rounded-lg ">
+  return (<div className="flex justify-center">
+    <div className="h-[30vh] w-[60vh] px-5 ">
       <div className="flex justify-center my-7">
         <h2 className="text-white text-xl">Contact</h2>
       </div>
