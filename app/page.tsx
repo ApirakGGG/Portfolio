@@ -5,11 +5,13 @@ import Portfolio from "@/components/Portfolio";
 
 export default function Home() {
   return (
-    <div>
-      <Introduce />
+    <main className="h-full w-full">
+     <div className="flex flex-col">
+     <Introduce />
       <Hr />
       <PersonalDetials />
       <Portfolio />
-    </div>
+     </div>
+    </main>
   );
 }

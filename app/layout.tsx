@@ -21,14 +21,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} antialiased`}>
+      <body
+        className={`${poppins.className} antialiased overflow-x-hidden overflow-y-scroll`}
+      >
         <NextThemeProvider>
           <Navbar />
-          <main className="px-10 py-5 ">
-            <div className=" rounded-lg px-5 py-5 overflow-x-hidden ">
-              {children}
-            </div>
-          </main>
+          <main className="px-10 ">{children}</main>
         </NextThemeProvider>
       </body>
     </html>

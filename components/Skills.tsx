@@ -29,12 +29,11 @@ export default function Skills() {
     { id: 2, name: "github", img: "/service/github-logo-vector.png" },
   ];
   return (
-    <div className="mt-36">
-      <div className="h-[50vh] w-full px-5 py-5">
-        <div className="flex justify-center my-5">
-          <h2 className="text-white text-xl">Skills</h2>
-        </div>
-        <div className="md:justify-start mt-24">
+    <div className="mt-20 border rounded-lg h-[60vh]">
+      <div className="flex justify-center mt-5">
+        <h2 className="text-white text-xl">Skills</h2>
+      </div>
+      <div className="md:justify-start px-10 py-10">
         <button
           onClick={() => setOpen(!open)}
           className="flex gap-2 my-5 text-lg px-5 font-bold"
@@ -46,70 +45,69 @@ export default function Skills() {
             }`}
           />
         </button>
-          {/* Front-end */}
-          <h3 className="px-5 font-semibold">Front-end</h3>
-          <div className="flex items-center my-2">
-            {open &&
-              skills.map((skill) => (
-                <div key={skill.id} className=" items-center px-10 my-2">
-                  <Image
-                    src={skill.img}
-                    alt={skill.name}
-                    width={50}
-                    height={50}
-                    className="rounded-lg object-cover"
-                  />
-                </div>
-              ))}
-          </div>
-          {/* Back-end */}
-          <h3 className="px-5 font-semibold">Back-end</h3>
-          <div className="flex items-center my-2">
-            {open &&
-              backend.map((backends) => (
-                <div key={backends.id} className=" items-center px-10 my-2">
-                  <Image
-                    src={backends.img}
-                    alt={backends.name}
-                    width={50}
-                    height={50}
-                    className="rounded-lg object-cover "
-                  />
-                </div>
-              ))}
-          </div>
-          {/* Database */}
-          <h3 className="px-5 font-semibold">Back-end</h3>
-          <div className="flex items-center my-2">
-            {open &&
-              database.map((databases) => (
-                <div key={databases.id} className=" items-center px-10 my-2">
-                  <Image
-                    src={databases.img}
-                    alt={databases.name}
-                    width={50}
-                    height={50}
-                    className="rounded-lg object-cover "
-                  />
-                </div>
-              ))}
-          </div>
-          {/* Service */}
-          <h3 className="px-5 font-semibold">Service</h3>
-          <div className="flex items-center my-2">
-            {open &&
-              service.map((services) => (
-                <div key={services.id} className=" items-center px-10 my-2">
-                  <Image
-                    src={services.img}
-                    alt={services.name}
-                    width={50}
-                    height={50}
-                    className="rounded-lg object-cover "
-                  />
-                </div>
-              ))}
-          </div>
+        {/* Front-end */}
+        <h3 className="px-5 font-semibold">Front-end</h3>
+        <div className="flex items-center my-2">
+          {open &&
+            skills.map((skill) => (
+              <div key={skill.id} className=" items-center px-10 my-2">
+                <Image
+                  src={skill.img}
+                  alt={skill.name}
+                  width={50}
+                  height={50}
+                  className="rounded-lg object-cover"
+                />
+              </div>
+            ))}
+        </div>
+        {/* Back-end */}
+        <h3 className="px-5 font-semibold">Back-end</h3>
+        <div className="flex items-center my-2">
+          {open &&
+            backend.map((backends) => (
+              <div key={backends.id} className=" items-center px-10 my-2">
+                <Image
+                  src={backends.img}
+                  alt={backends.name}
+                  width={50}
+                  height={50}
+                  className="rounded-lg object-cover "
+                />
+              </div>
+            ))}
+        </div>
+        {/* Database */}
+        <h3 className="px-5 font-semibold">Back-end</h3>
+        <div className="flex items-center my-2">
+          {open &&
+            database.map((databases) => (
+              <div key={databases.id} className=" items-center px-10 my-2">
+                <Image
+                  src={databases.img}
+                  alt={databases.name}
+                  width={50}
+                  height={50}
+                  className="rounded-lg object-cover "
+                />
+              </div>
+            ))}
+        </div>
+        {/* Service */}
+        <h3 className="px-5 font-semibold">Service</h3>
+        <div className="flex items-center my-2">
+          {open &&
+            service.map((services) => (
+              <div key={services.id} className=" items-center px-10 my-2">
+                <Image
+                  src={services.img}
+                  alt={services.name}
+                  width={50}
+                  height={50}
+                  className="rounded-lg object-cover "
+                />
+              </div>
+            ))}
         </div>
       </div>
     </div>

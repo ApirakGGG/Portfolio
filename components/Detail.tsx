@@ -33,8 +33,11 @@ const Detail = () => {
     document.body.removeChild(link); // ลบ element ออกจาก DOM หลังจากการใช้งาน
   };
   return (
-    <div className="mt-32">
-      <div className="space-y-1">
+    <div className="mt-20 border rounded-lg h-[60vh]">
+       <div className="flex justify-center mt-5">
+          <h2 className="text-white text-xl ">Personal Details</h2>
+        </div>
+      <div className="space-y-1 px-10 py-10">
         <h3 className="font-bold text-blue-400">Detials</h3>
         <ul className="list-disc px-5 items-center">
           <li>Name: Apirak Jansawang</li>
@@ -62,9 +65,8 @@ const Detail = () => {
           <li>--</li>
           <li>--</li>
         </ul>
-      </div>
-      <div className="mt-3 ">
-        <Link href={"#"} legacyBehavior>
+        {/* Donload Resume */}
+        <Link href={"#"} legacyBehavior >
           <a
             onClick={(e) => {
               e.preventDefault(); // กันการรีเฟรช

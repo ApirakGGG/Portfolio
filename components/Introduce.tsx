@@ -2,14 +2,14 @@ import Image from "next/image";
 import TextGenerate from "./TextGenerate";
 export default function Introduce() {
   return (
-    <div className="flex justify-between md:flex-row cursor-pointer md:px-10 sm:px-10 py-5 sm:-mt-10">
-      <div className="relative flex flex-col md:flex-row items-center py-5 px-5 space-x-0 md:space-x-16 sm:flex sm:justify-center">
+    <div className="flex justify-between md:flex-row cursor-pointer sm:px-10 py-5 mt-10">
+      <div className="relative flex flex-col md:flex-row items-center py-5 px-5 space-x-0 md:space-x-20 sm:flex sm:justify-center">
         <Image
           src="/me.jpg"
           alt="your self"
           width={250}
           height={250}
-          className="rounded-full object-cover items-center relative drop-shadow-2xl w-[150px] sm:w-[250px] md:w-[250px]"
+          className="rounded-full object-cover items-center relative drop-shadow-2xl w-[150px] sm:w-[250px] md:w-[250px] md:ml-10"
         />
         <div className="w-full">
           <div className="flex ">
