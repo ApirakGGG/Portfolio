@@ -2,7 +2,7 @@ import Image from "next/image";
 import TextGenerate from "./TextGenerate";
 export default function Introduce() {
   return (
-    <div className="flex justify-between md:flex-row cursor-pointer sm:px-10 py-5 sm:-mt-10">
+    <div className="flex justify-between md:flex-row cursor-pointer md:px-10 sm:px-10 py-5 sm:-mt-10">
       <div className="relative flex flex-col md:flex-row items-center py-5 px-5 space-x-0 md:space-x-16 sm:flex sm:justify-center">
         <Image
           src="/me.jpg"

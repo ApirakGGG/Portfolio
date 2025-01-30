@@ -22,7 +22,7 @@ export default function PersonalDetials() {
   ];
 
   return (
-    <div className="my-56">
+    <div className="mt-56">
       <div className="my-10 flex justify-center rotate-6">
         <h1 className="text-5xl bg-gradient-to-t from-orange-500 to-purple-700 text-transparent bg-clip-text">
           ABOUT <span className="text-sky-300 underline">ME</span>
@@ -43,7 +43,7 @@ export default function PersonalDetials() {
         <Skills />
       </div>
       {/* section Contact*/}
-      <div className="flex justify-center mt-14">
+      <div className="flex justify-center mt-36">
         <div className="h-[30vh] w-[60vh] px-5 ">
           <div className="flex justify-center my-7">
             <h2 className="text-white text-xl">Contact</h2>

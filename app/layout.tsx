@@ -24,8 +24,8 @@ export default function RootLayout({
       <body className={`${poppins.className} antialiased`}>
         <NextThemeProvider>
           <Navbar />
-          <main className="px-10 py-10 ">
-            <div className=" rounded-lg px-10 py-5 overflow-x-hidden ">
+          <main className="px-10 py-5 ">
+            <div className=" rounded-lg px-5 py-5 overflow-x-hidden ">
               {children}
             </div>
           </main>

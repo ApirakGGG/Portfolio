@@ -29,11 +29,12 @@ export default function Skills() {
     { id: 2, name: "github", img: "/service/github-logo-vector.png" },
   ];
   return (
-    <div className="mt-10">
+    <div className="mt-36">
       <div className="h-[50vh] w-full px-5 py-5">
         <div className="flex justify-center my-5">
           <h2 className="text-white text-xl">Skills</h2>
         </div>
+        <div className="md:justify-start mt-24">
         <button
           onClick={() => setOpen(!open)}
           className="flex gap-2 my-5 text-lg px-5 font-bold"
@@ -45,7 +46,6 @@ export default function Skills() {
             }`}
           />
         </button>
-        <div className="md:justify-start">
           {/* Front-end */}
           <h3 className="px-5 font-semibold">Front-end</h3>
           <div className="flex items-center my-2">

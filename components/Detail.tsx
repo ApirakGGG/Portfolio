@@ -1,11 +1,10 @@
-'use client'
-import { CloudDownload } from 'lucide-react';
-import Link from 'next/link';
-import React,{useState, useEffect} from 'react'
+"use client";
+import { CloudDownload } from "lucide-react";
+import Link from "next/link";
+import React, { useState, useEffect } from "react";
 
 const Detail = () => {
-
-    // current my BirthDay
+  // current my BirthDay
   const calculateAge = (birthDate: string, baseAge: number = 20): number => {
     const birth = new Date(birthDate); //setวันเกิด
     const today = new Date(); //กำหนดวัน
@@ -34,49 +33,51 @@ const Detail = () => {
     document.body.removeChild(link); // ลบ element ออกจาก DOM หลังจากการใช้งาน
   };
   return (
-    <div><div className="space-y-1">
-    <h3 className="font-bold text-blue-400">Detials</h3>
-    <ul className="list-disc px-5 items-center">
-      <li>Name: Apirak Jansawang</li>
-      <li>Age: {age}</li>
-      <li>{"Education level: Bachelor's degree"}</li>
-      <li>Bachelor of Business Administration : B.B.A.</li>
-    </ul>
-    <h3 className="font-bold text-blue-400 ">
-      Skills Overview <span className="text-yellow-500">&</span>{" "}
-      Programming, Frameworks, Tools
-    </h3>
-    <ul className="list-disc px-5 items-center">
-      <li>HTML, CSS, JavaScript (React, Next.js, Tailwind CSS)</li>
-      <li>Backend (Node.js, Express)</li>
-      <li>Database (MongoDB, PostgreSQL)</li>
-      <li>Git</li>
-    </ul>
-    <h3 className="font-bold text-blue-400">Languages</h3>
-    <ul className="list-disc px-5 items-center">
-      <li>Thai (Native)</li>
-      <li>English (Basic Communication, Improving)</li>
-    </ul>
-    <h3 className="font-bold text-blue-400">Work Experience</h3>
-    <ul className="list-disc px-5 items-center">
-      <li>--</li>
-      <li>--</li>
-    </ul>
-  </div>
-  <div className="mt-3 ">
-    <Link href={"#"} legacyBehavior>
-      <a
-        onClick={(e) => {
-          e.preventDefault(); // กันการรีเฟรช
-          dowloadPdf(); //
-        }}
-        className="flex gap-1.5 border px-5 py-1.5 w-[300px] rounded-xl bg-transparent cursor-pointer"
-      >
-        <p>Download Resume PDF</p> <CloudDownload />
-      </a>
-    </Link>
-  </div></div>
-  )
-}
+    <div className="mt-32">
+      <div className="space-y-1">
+        <h3 className="font-bold text-blue-400">Detials</h3>
+        <ul className="list-disc px-5 items-center">
+          <li>Name: Apirak Jansawang</li>
+          <li>Age: {age}</li>
+          <li>{"Education level: Bachelor's degree"}</li>
+          <li>Bachelor of Business Administration : B.B.A.</li>
+        </ul>
+        <h3 className="font-bold text-blue-400 ">
+          Skills Overview <span className="text-yellow-500">&</span>{" "}
+          Programming, Frameworks, Tools
+        </h3>
+        <ul className="list-disc px-5 items-center">
+          <li>HTML, CSS, JavaScript (React, Next.js, Tailwind CSS)</li>
+          <li>Backend (Node.js, Express)</li>
+          <li>Database (MongoDB, PostgreSQL)</li>
+          <li>Git</li>
+        </ul>
+        <h3 className="font-bold text-blue-400">Languages</h3>
+        <ul className="list-disc px-5 items-center">
+          <li>Thai (Native)</li>
+          <li>English (Basic Communication, Improving)</li>
+        </ul>
+        <h3 className="font-bold text-blue-400">Work Experience</h3>
+        <ul className="list-disc px-5 items-center">
+          <li>--</li>
+          <li>--</li>
+        </ul>
+      </div>
+      <div className="mt-3 ">
+        <Link href={"#"} legacyBehavior>
+          <a
+            onClick={(e) => {
+              e.preventDefault(); // กันการรีเฟรช
+              dowloadPdf(); //
+            }}
+            className="flex gap-1.5 border px-5 py-1.5 w-[300px] rounded-xl bg-transparent cursor-pointer"
+          >
+            <p>Download Resume PDF</p> <CloudDownload />
+          </a>
+        </Link>
+      </div>
+    </div>
+  );
+};
 
-export default Detail
+export default Detail;

@@ -25,7 +25,7 @@ export default function Navbar() {
     },
   ];
   return (
-    <div className=" sticky top-0 z-20 py-5 px-5 ">
+    <div className=" sticky top-0 z-10 py-5 px-5 bg-black">
       <div className="flex justify-around items-center">
         <div className=" w-[10vh] ">
           {/* scroll to top */}
@@ -43,13 +43,13 @@ export default function Navbar() {
               key={item.id}
               className="transition ease-in-out delay-150 hover:translate-x-1 hover:scale-110 duration-700"
             >
-              <Link href={item.link}>
-                <item.icon />
+              <Link href={item.link} className="z-20">
+                <item.icon className="text-white"/>
               </Link>
             </div>
           ))}
         </div>
-        <div className="items-center ">
+        <div className="items-center text-white">
           <ModeToggle />
         </div>
       </div>
