@@ -1,5 +1,6 @@
 import Contact from "./Contact";
 import Detail from "./Detail";
+import InfinitSlide from "./InfinitSlide";
 import Skills from "./Skills";
 import Slide from "./Slide";
 
@@ -20,6 +21,8 @@ export default function PersonalDetials() {
         <Contact />
         {/* Slide */}
         <Slide />
+        {/* InfinitSlide */}
+        <InfinitSlide />
       </div>
     </div>
   );
