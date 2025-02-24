@@ -1,7 +1,5 @@
-import Contact from "./Contact";
-import Detail from "./Detail";
+import Detail_Swiper from "./Detail_Swiper";
 import InfinitSlide from "./InfinitSlide";
-import Skills from "./Skills";
 import Slide from "./Slide";
 
 export default function PersonalDetials() {
@@ -13,12 +11,8 @@ export default function PersonalDetials() {
         </h1>
       </div>
       <div className="px-5 py-5 gap-3 space-y-36">
-        {/* Detail */}
-        <Detail />
-        {/* Skills */}
-        <Skills />
-        {/* Contact*/}
-        <Contact />
+        {/* Detail Swiper*/}
+        <Detail_Swiper />
         {/* Slide */}
         <Slide />
         {/* InfinitSlide */}
